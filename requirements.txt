@@ -1,0 +1,4 @@
+## 스크립트에서 사용한 모듈들 
+streamlit
+numpy
+pandas
