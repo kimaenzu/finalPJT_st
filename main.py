@@ -7,6 +7,7 @@ from IPython.core.display import HTML, display
 from IPython.core import display
 
 import inspect
+import os
 from google.cloud import firestore
 
 from kobert.utils import get_tokenizer
@@ -116,7 +117,7 @@ def predict_img(emo):
 ############
 ## bertmodel의 vocabulary
 bertmodel, vocab = get_pytorch_kobert_model()
-st.write(pwd)
+st.write(os.getcmd())
 #model = torch.load('/models/7emotions_model.pt')
 
 ## Title
