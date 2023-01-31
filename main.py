@@ -85,6 +85,10 @@ add_selectbox = st.sidebar.selectbox("무엇이 궁금하세요?",("감정기록
 ## 감정기록
 if add_selectbox == "감정기록":
    input_emotion()
+   st.write(inspect.getfile(HTML))
+   st.write(inspect.getfile(firebase-admin))
+
+
 
 ## 과거의 감정
 if add_selectbox == "과거의 감정":
@@ -104,9 +108,6 @@ if add_selectbox == "과거의 감정":
 
   date2 = st.date_input("(2안) 일기를 선택하세요.", datetime.date(2019, 7, 6))
   st.write(date2, " 일기를 불러왔습니다.")
-
-print(inspect.getfile(HTML))
-print(inspect.getfile(firebase-admin))
 
 
 ## 감정그래프
