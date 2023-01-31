@@ -117,13 +117,8 @@ def predict_img(emo):
 ############
 ## bertmodel의 vocabulary
 bertmodel, vocab = get_pytorch_kobert_model()
-
-
-try:
-  model = torch.load('/model/7emotions_model.pt')
-except:
-  st.write("error : load model")
-
+st.write(os.getcmd())
+#model = torch.load('/models/7emotions_model.pt')
 
 ## Title
 st.title("감정저장소")
@@ -135,6 +130,15 @@ add_selectbox = st.sidebar.selectbox("무엇이 궁금하세요?",("감정기록
 ## 감정기록
 if add_selectbox == "감정기록":
    input_emotion()
+   st.write(inspect.getfile(firestore))
+   st.write(inspect.getfile(HTML))
+   st.write(inspect.getfile(get_tokenizer))
+   st.write(inspect.getfile(get_pytorch_kobert_model))
+   st.write(inspect.getfile(Dataset))
+   st.write(inspect.getfile(nn))
+   st.write(inspect.getfile(torch))
+   st.write(inspect.getfile(nlp))
+
 
 ## 과거의 감정
 if add_selectbox == "과거의 감정":
