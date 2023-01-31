@@ -1,11 +1,3 @@
-## import
-from kobert.utils import get_tokenizer
-from kobert.pytorch_kobert import get_pytorch_kobert_model
-from torch.utils.data import Dataset, DataLoader
-from torch import nn
-import torch
-import gluonnlp as nlp
-
 import numpy as np
 import datetime
 import streamlit as st
@@ -16,8 +8,7 @@ from PIL import Image
 
 import firebase_admin
 from firebase_admin import credentials
-
-###################################################
+############
 ## var
 d = datetime.datetime.now()
 TODAY = str(d)[:10]
@@ -26,7 +17,7 @@ df = pd.DataFrame(calendar)
 columns = ['MON','TUE','WED','THU','FRI','SAT','SUN']
 df.columns = columns 
 
-###################################################
+############
 ## def 
 
 ## 일기를 작성받는 함수
@@ -62,6 +53,7 @@ def calendar_emo():
 ## 대충 만든 달력 ==========(달력 DB 가져오기 코드로 바뀔 것)
   st.write(HTML(df.to_html(escape=False,formatters={'MON':to_img_tag,'TUE':to_img_tag,'WED':to_img_tag,'THU':to_img_tag,'FRI':to_img_tag,'SAT':to_img_tag,'SUN':to_img_tag})))
 
+
 ## 예측감정 이미지 출력
 def predict_img(emo):
   if emo == '공포가' :
@@ -80,9 +72,7 @@ def predict_img(emo):
   elif emo == '혐오가' :
     st.write(HTML('<img src="https://raw.githubusercontent.com/kimaenzu/finalPJT_st/main/image/disgust.png">'))
 
-st.write("kebert 기능 없음")
-
-###################################################
+############
 
 ## Title
 st.title("감정저장소")
@@ -122,5 +112,3 @@ if add_selectbox == "감정그래프":
 
 	## Text
 	st.text("감정그래프 출력")
-
-#################################################################################
