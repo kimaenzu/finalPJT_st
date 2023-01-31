@@ -2,8 +2,8 @@ import numpy as np
 import datetime
 import streamlit as st
 import pandas as pd
-#from IPython.core.display import HTML, display
-#from IPython.core import display
+import HTML, display
+import display
 from PIL import Image
 
 import firebase_admin
