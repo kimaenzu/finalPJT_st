@@ -125,11 +125,11 @@ except:
   st.write("error : load model")
 ## 경로 출력
 try:
-  st.write(os.path.abspath(__file__)
+  st.write(os.path.abspath(__file__))
 except:
   st.write(error1)
 try:
-  st.write(os.path.realpath(__file__)
+  st.write(os.path.realpath(__file__))
 except:
   st.write(error2)
 
