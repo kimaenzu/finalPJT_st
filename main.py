@@ -94,12 +94,12 @@ if add_selectbox == "감정기록":
    input_emotion()
    st.write(inspect.getfile(firestore))
    st.write(inspect.getfile(HTML))
-   st.write(inspect.getfile(get_tokenizer)
-   st.write(inspect.getfile(get_pytorch_kobert_model)
-   st.write(inspect.getfile(Dataset)
-   st.write(inspect.getfile(nn)
-   st.write(inspect.getfile(torch)
-   st.write(inspect.getfile(nlp)
+   st.write(inspect.getfile(get_tokenizer))
+   st.write(inspect.getfile(get_pytorch_kobert_model))
+   st.write(inspect.getfile(Dataset))
+   st.write(inspect.getfile(nn))
+   st.write(inspect.getfile(torch))
+   st.write(inspect.getfile(nlp))
 
 
 ## 과거의 감정
