@@ -2,4 +2,4 @@
 streamlit
 numpy
 pandas
-firebase-admin
+google-cloud-firestore
