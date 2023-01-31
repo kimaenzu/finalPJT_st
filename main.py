@@ -40,7 +40,7 @@ def input_emotion():
 
 #    st.success(result)
     st.text(f"{TODAY} 기록이 완료됐습니다.")
-    st.text("KoBERT 감정예측 출력 보류)
+    st.text("KoBERT 감정예측 출력 보류")
 #    update_emo(predict(message))
     
 
