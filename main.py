@@ -6,9 +6,7 @@ import pandas as pd
 #import display
 from PIL import Image
 import inspect
-
-#import firebase_admin
-#from firebase_admin import credentials
+from google.cloud import firestore
 ############
 ## var
 d = datetime.datetime.now()
@@ -85,8 +83,8 @@ add_selectbox = st.sidebar.selectbox("무엇이 궁금하세요?",("감정기록
 ## 감정기록
 if add_selectbox == "감정기록":
    input_emotion()
-#   st.write(inspect.getfile(HTML))
-   st.write(inspect.getfile(firebase-admin))
+   st.write(inspect.getfile(firestore))
+   st.write(inspect.getfile(HTML))
 
 
 

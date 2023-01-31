@@ -3,3 +3,4 @@ streamlit
 numpy
 pandas
 google-cloud-firestore
+html5lib
