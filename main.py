@@ -5,6 +5,8 @@ import pandas as pd
 import HTML, display
 import display
 from PIL import Image
+import inspect
+import streamlit as st
 
 import firebase_admin
 from firebase_admin import credentials
@@ -103,6 +105,10 @@ if add_selectbox == "과거의 감정":
 
   date2 = st.date_input("(2안) 일기를 선택하세요.", datetime.date(2019, 7, 6))
   st.write(date2, " 일기를 불러왔습니다.")
+
+print(inspect.getfile(HTML))
+print(inspect.getfile(firebase-admin))
+
 
 ## 감정그래프
 if add_selectbox == "감정그래프":
