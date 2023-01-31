@@ -85,7 +85,7 @@ add_selectbox = st.sidebar.selectbox("무엇이 궁금하세요?",("감정기록
 ## 감정기록
 if add_selectbox == "감정기록":
    input_emotion()
-   st.write(inspect.getfile(HTML))
+#   st.write(inspect.getfile(HTML))
    st.write(inspect.getfile(firebase-admin))
 
 
