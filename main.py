@@ -116,7 +116,8 @@ def predict_img(emo):
 ############
 ## bertmodel의 vocabulary
 bertmodel, vocab = get_pytorch_kobert_model()
-model = torch.load('/models/7emotions_model.pt')
+st.write(pwd)
+#model = torch.load('/models/7emotions_model.pt')
 
 ## Title
 st.title("감정저장소")
