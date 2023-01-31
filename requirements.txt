@@ -8,10 +8,15 @@ ipython==7.9.0
 ipython-genutils==0.2.0
 ipython-sql==0.3.9
 
-git+https://git@github.com/SKTBrain/KoBERT.git@47a69af87928fc24e20f571fe10c3cc9dd9af9a3
 
-torch==1.13.1
-torchsummary==1.5.1
-torchtext==0.14.1
+##torchsummary==1.5.1
+##torchtext==0.14.1
 #https://download.pytorch.org/whl/cu116/torchvision-0.14.1%2Bcu116-cp38-cp38-linux_x86_64.whl
-gluonnlp==0.10.0
+
+git+https://git@github.com/SKTBrain/KoBERT.git@master
+sentence_transformers
+transformers==4.8.1
+torch
+gluonnlp
+##numpy==1.21.6
+pandas
