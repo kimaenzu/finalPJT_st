@@ -2,11 +2,20 @@ import numpy as np
 import datetime
 import streamlit as st
 import pandas as pd
+from PIL import Image
 from IPython.core.display import HTML, display
 from IPython.core import display
-from PIL import Image
+
 import inspect
 from google.cloud import firestore
+
+from kobert.utils import get_tokenizer
+from kobert.pytorch_kobert import get_pytorch_kobert_model
+from torch.utils.data import Dataset, DataLoader
+from torch import nn
+import torch
+import gluonnlp as nlp
+
 ############ 
 ## var
 d = datetime.datetime.now()
@@ -85,7 +94,12 @@ if add_selectbox == "감정기록":
    input_emotion()
    st.write(inspect.getfile(firestore))
    st.write(inspect.getfile(HTML))
-
+   st.write(inspect.getfile(get_tokenizer)
+   st.write(inspect.getfile(get_pytorch_kobert_model)
+   st.write(inspect.getfile(Dataset)
+   st.write(inspect.getfile(nn)
+   st.write(inspect.getfile(torch)
+   st.write(inspect.getfile(nlp)
 
 
 ## 과거의 감정
