@@ -59,7 +59,8 @@ def to_img_tag(path):
 
 ## 달력 가져와서 출력하기 : 아이콘을 눌러서 일기를 볼 수 있을까?
 def calendar_emo():
-## 대충 만든 달력 ==========(달력 DB 가져오기 코드로 바뀔 것)    st.write(HTML(df.to_html(escape=False,formatters={'MON':to_img_tag,'TUE':to_img_tag,'WED':to_img_tag,'THU':to_img_tag,'FRI':to_img_tag,'SAT':to_img_tag,'SUN':to_img_tag})))
+## 대충 만든 달력 ==========(달력 DB 가져오기 코드로 바뀔 것)
+  st.write(HTML(df.to_html(escape=False,formatters={'MON':to_img_tag,'TUE':to_img_tag,'WED':to_img_tag,'THU':to_img_tag,'FRI':to_img_tag,'SAT':to_img_tag,'SUN':to_img_tag})))
 
 ## 예측감정 이미지 출력
 def predict_img(emo):
