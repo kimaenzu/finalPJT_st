@@ -7,7 +7,8 @@ import pandas as pd
 from PIL import Image
 import inspect
 from google.cloud import firestore
-############
+import html5lib as HTML
+############ 
 ## var
 d = datetime.datetime.now()
 TODAY = str(d)[:10]
