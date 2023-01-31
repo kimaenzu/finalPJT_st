@@ -2,14 +2,13 @@ import numpy as np
 import datetime
 import streamlit as st
 import pandas as pd
-import HTML, display
-import display
+#import HTML, display
+#import display
 from PIL import Image
 import inspect
-import streamlit as st
 
-import firebase_admin
-from firebase_admin import credentials
+#import firebase_admin
+#from firebase_admin import credentials
 ############
 ## var
 d = datetime.datetime.now()
