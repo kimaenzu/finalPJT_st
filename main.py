@@ -122,7 +122,12 @@ bertmodel, vocab = get_pytorch_kobert_model()
 try:
   model = torch.load('./model/7emotions_model.pt')
 except:
-  st.write("error : load model")
+  st.write("error : load model (상대경로)")
+try:
+  model = torch.load('https://github.com/kimaenzu/finalPJT_st/blob/main/model/7emotions_model.pt')
+except:
+  st.write("error : load model(절대경로)")
+
 
 
 ## Title
