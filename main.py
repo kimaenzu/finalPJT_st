@@ -118,7 +118,7 @@ def predict_img(emo):
 ## bertmodel의 vocabulary
 bertmodel, vocab = get_pytorch_kobert_model()
 
-
+ 
 try:
   model = torch.load('./model/7emotions_model.pt')
 except:
