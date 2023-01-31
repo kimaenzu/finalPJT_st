@@ -1,19 +1,16 @@
 
 #################################################################################
 ## import
-import streamlit as st
-
-## KoBERT
 from kobert.utils import get_tokenizer
 from kobert.pytorch_kobert import get_pytorch_kobert_model
-
 from torch.utils.data import Dataset, DataLoader
 from torch import nn
 import torch
 import gluonnlp as nlp
+
 import numpy as np
 import datetime
-
+import streamlit as st
 import pandas as pd
 from IPython.core.display import HTML, display
 from IPython.core import display
@@ -23,16 +20,7 @@ import firebase_admin
 from firebase_admin import credentials
 
 #################################################################################
-cred = credentials.Certificate("/content/content/firebase-adminsdk.json")
-#firebase_admin.initialize_app(cred)
-
-##// bucket 콜렉션
-const bucket = firestore.collection("bucket");
-
-##// bucket 콜렉션의 info 문서에 {name: 'duck';, height: 180} 데이터 추가.
-##// 새로 만들거나 덮어쓰기
-bucket.doc("info").set({name: 'duck', height: 180});
-
+## var
 d = datetime.datetime.now()
 TODAY = str(d)[:10]
 calendar = [['sad','fear','happy','neutral','happy','surprise','neutral'],['angry','disgust','surprise','sad','sad','neutral','sad'],['happy','happy','happy','19','20','21','22'],['23','24','25','26','27','28','29'],['30','31','_','_','_','_','_']]
