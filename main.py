@@ -127,11 +127,11 @@ except:
 try:
   st.write(os.path.abspath(__file__))
 except:
-  st.write(error1)
+  st.write("error1")
 try:
   st.write(os.path.realpath(__file__))
 except:
-  st.write(error2)
+  st.write("error2")
 
 
 ## Title
