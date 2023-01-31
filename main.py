@@ -2,12 +2,11 @@ import numpy as np
 import datetime
 import streamlit as st
 import pandas as pd
-#import HTML, display
-#import display
+from IPython.core.display import HTML, display
+from IPython.core import display
 from PIL import Image
 import inspect
 from google.cloud import firestore
-import html5lib as HTML
 ############ 
 ## var
 d = datetime.datetime.now()
