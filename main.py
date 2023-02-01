@@ -120,14 +120,17 @@ bertmodel, vocab = get_pytorch_kobert_model()
 
  
 try:
-  st.write(os.listdir())
-escept:
-  st.write("error : os.listdir())
-
-try:
   model = torch.load('./model/7emotions_model.pt')
+  st.write("success : './model/7emotions_model.pt'")
 except:
   st.write("error : './model/7emotions_model.pt'")
+
+try:
+  model = torch.load('https://github.com/kimaenzu/finalPJT_st/model/7emotions_model.pt')
+  st.write("success: 'https://github.com/kimaenzu/finalPJT_st/model/7emotions_model.pt'")
+except:
+  st.write("error : 'https://github.com/kimaenzu/finalPJT_st/model/7emotions_model.pt'")
+
 ## Title
 st.title("감정저장소")
 ## Header/Subheader
