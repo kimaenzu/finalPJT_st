@@ -120,18 +120,25 @@ bertmodel, vocab = get_pytorch_kobert_model()
 
  
 try:
+  st.write(os.listdir())
+escept:
+  st.write("error : os.listdir())
+try:
   model = torch.load('./model/7emotions_model.pt')
 except:
-  st.write("error : load model (상대경로)")
+  st.write("error : './model/7emotions_model.pt'")
+
 try:
   model = torch.load('https://github.com/kimaenzu/finalPJT_st/blob/main/model/7emotions_model.pt')
+  st.write("success: 'https://github.com/kimaenzu/finalPJT_st/blob/main/model/7emotions_model.pt'")
 except:
-  st.write("error : load model(절대경로)")
+  st.write("error : 'https://github.com/kimaenzu/finalPJT_st/blob/main/model/7emotions_model.pt'")
+
 try:
-  model = torch.load('https://github.com/kimaenzu/finalPJT_st/tree/main/model/7emotions_model.pt')
-  st.write("success: 절대경로2")
+  model = torch.load('https://github.com/kimaenzu/finalPJT_st/model/7emotions_model.pt')
+  st.write("success: 'https://github.com/kimaenzu/finalPJT_st/model/7emotions_model.pt'")
 except:
-  st.write("error : load model(절대경로2)")
+  st.write("error : 'https://github.com/kimaenzu/finalPJT_st/model/7emotions_model.pt'")
 
 
 
