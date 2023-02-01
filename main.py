@@ -129,6 +129,7 @@ except:
   st.write("error : load model(절대경로)")
 try:
   model = torch.load('https://github.com/kimaenzu/finalPJT_st/tree/main/model/7emotions_model.pt')
+  st.write("success: 절대경로2")
 except:
   st.write("error : load model(절대경로2)")
 
